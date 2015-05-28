@@ -2,7 +2,9 @@
 
 A Simple SFTP wrapper for Silex
 
-
+[![Latest Stable Version](https://poser.pugx.org/achrafsoltani/sftp-service-provider/v/stable)](https://packagist.org/packages/achrafsoltani/sftp-service-provider)
+[![Total Downloads](https://poser.pugx.org/achrafsoltani/sftp-service-provider/downloads)](https://packagist.org/packages/achrafsoltani/sftp-service-provider)
+[![License](https://poser.pugx.org/achrafsoltani/sftp-service-provider/license)](https://packagist.org/packages/achrafsoltani/sftp-service-provider)
 
 Features
 --------
