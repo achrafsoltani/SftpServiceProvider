@@ -13,7 +13,8 @@
 namespace AchrafSoltani\Provider;
 
 use Silex\Application;
-use Silex\ServiceProviderInterface;
+use Pimple\ServiceProviderInterface;
+use Pimple\Container;
 use AchrafSoltani\Client\Sftp;
 /**
  * Class MailgunServiceProvider
@@ -21,7 +22,7 @@ use AchrafSoltani\Client\Sftp;
  */
 class SftpServiceProvider implements ServiceProviderInterface
 {
-    public function register(Application $app)
+    public function register(Container $app)
     {
         
         $app['sftp'] = function () use ($app) 
@@ -30,10 +31,5 @@ class SftpServiceProvider implements ServiceProviderInterface
             $sftp->connect();
             return $sftp;
         };
-    }
-    
-    public function boot(Application $app)
-    {
-        
     }
 }
